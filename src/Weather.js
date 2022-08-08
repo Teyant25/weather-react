@@ -11,5 +11,5 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(handleResponse);
-  return <Circles color="#00BFFF" height={80} width={80} />;
+  return <Circles color="red" height={80} width={80} />;
 }
